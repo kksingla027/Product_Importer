@@ -1,11 +1,8 @@
-﻿using Gartner.Product_Importer.DAL.Contracts;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Gartner.Product_Importer.DAL.Bootstrap
+﻿namespace Gartner.Product_Importer.DAL.Bootstrap
 {
+    using Gartner.Product_Importer.DAL.Contracts;
+    using Microsoft.Extensions.DependencyInjection;
+
     public static class DALInitializer
     {
         public static void Initialize(IServiceCollection services)
