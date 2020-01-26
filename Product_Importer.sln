@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gartner.Product_Importer.API", "Product_Importer\Gartner.Product_Importer.API.csproj", "{95355662-D853-4C41-A604-30FD5951A03E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gartner.Product_Importer.Business", "Gartner.Product_Importer.Business\Gartner.Product_Importer.Business.csproj", "{57CFBFA8-FD77-4701-AB04-FF12322C4ABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gartner.Product_Importer.DAL", "Gartner.Product_Importer.DAL\Gartner.Product_Importer.DAL.csproj", "{AE967EC7-3035-47C9-8518-E63EA2216F2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{DD7D3975-5556-4B8A-86A2-81F3385ACBF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{FC230CAE-55B0-4D09-B455-BCF8CA333AEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Provider", "Provider", "{C0CC3630-E9AD-451C-9AC9-2A92823F100C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Test", "Unit Test", "{6F5C1A7E-D342-45AD-A811-5AAD3367B181}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A6692EE5-802F-48EC-A41A-1F22C5A67A30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gartner.Product_Importer.Common", "Gartner.Product_Importer.Common\Gartner.Product_Importer.Common.csproj", "{5B4DA603-FD64-4D5B-829D-F27397A59F84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gartner.Product_Importer_Tests", "Gartner.Product_Importer_Tests\Gartner.Product_Importer_Tests.csproj", "{982EA7C0-95CA-44CB-A4F2-3A5A674336B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{A2A4E9FE-B69E-4A8D-8690-123632335ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gartner.Product_Importer.Entities", "Gartner.Product_Importer.Entities\Gartner.Product_Importer.Entities.csproj", "{0EF4F184-F7E2-45AA-873A-D1CDD033F5C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95355662-D853-4C41-A604-30FD5951A03E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95355662-D853-4C41-A604-30FD5951A03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95355662-D853-4C41-A604-30FD5951A03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95355662-D853-4C41-A604-30FD5951A03E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57CFBFA8-FD77-4701-AB04-FF12322C4ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57CFBFA8-FD77-4701-AB04-FF12322C4ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57CFBFA8-FD77-4701-AB04-FF12322C4ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57CFBFA8-FD77-4701-AB04-FF12322C4ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE967EC7-3035-47C9-8518-E63EA2216F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE967EC7-3035-47C9-8518-E63EA2216F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE967EC7-3035-47C9-8518-E63EA2216F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE967EC7-3035-47C9-8518-E63EA2216F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4DA603-FD64-4D5B-829D-F27397A59F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4DA603-FD64-4D5B-829D-F27397A59F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4DA603-FD64-4D5B-829D-F27397A59F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4DA603-FD64-4D5B-829D-F27397A59F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982EA7C0-95CA-44CB-A4F2-3A5A674336B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982EA7C0-95CA-44CB-A4F2-3A5A674336B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982EA7C0-95CA-44CB-A4F2-3A5A674336B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982EA7C0-95CA-44CB-A4F2-3A5A674336B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF4F184-F7E2-45AA-873A-D1CDD033F5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF4F184-F7E2-45AA-873A-D1CDD033F5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF4F184-F7E2-45AA-873A-D1CDD033F5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF4F184-F7E2-45AA-873A-D1CDD033F5C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95355662-D853-4C41-A604-30FD5951A03E} = {FC230CAE-55B0-4D09-B455-BCF8CA333AEE}
+		{57CFBFA8-FD77-4701-AB04-FF12322C4ABB} = {DD7D3975-5556-4B8A-86A2-81F3385ACBF7}
+		{AE967EC7-3035-47C9-8518-E63EA2216F2C} = {C0CC3630-E9AD-451C-9AC9-2A92823F100C}
+		{5B4DA603-FD64-4D5B-829D-F27397A59F84} = {A6692EE5-802F-48EC-A41A-1F22C5A67A30}
+		{982EA7C0-95CA-44CB-A4F2-3A5A674336B0} = {6F5C1A7E-D342-45AD-A811-5AAD3367B181}
+		{0EF4F184-F7E2-45AA-873A-D1CDD033F5C7} = {A2A4E9FE-B69E-4A8D-8690-123632335ECF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B017394-760F-4F16-8DBE-D9A40B596EE5}
+	EndGlobalSection
+EndGlobal
