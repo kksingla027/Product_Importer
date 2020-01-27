@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Gartner.Product_Importer.Business;
 using Gartner.Product_Importer.Business.Bootstrap;
+using Gartner.Product_Importer.Common.FileUtility;
 using Gartner.Product_Importer.DAL.Bootstrap;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,8 +34,11 @@ namespace Product_Importer
             IMapper mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);
 
+            services.Configure<FileSettingManager>(this.Configuration.GetSection("FileSettingManager"));
             BusinessInitializer.Initialize(services);
-            DALInitializer.Initialize(services);
+
+            var dbProviderType = this.Configuration["Database:ProviderType"];
+            DALInitializer.Initialize(services, dbProviderType);
             
         }
 
@@ -46,6 +50,7 @@ namespace Product_Importer
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }

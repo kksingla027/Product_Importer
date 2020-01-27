@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.13.1" />
     <PackageReference Include="nunit" Version="3.10.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gartner.Product_Importer.Business\Gartner.Product_Importer.Business.csproj" />
+    <ProjectReference Include="..\Gartner.Product_Importer.DAL\Gartner.Product_Importer.DAL.csproj" />
   </ItemGroup>
 
 </Project>

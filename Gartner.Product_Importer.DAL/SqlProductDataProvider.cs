@@ -3,12 +3,18 @@
     using Gartner.Product_Importer.DAL.Contracts;
     using Gartner.Product_Importer.Entities;
     using System;
+    using System.Collections.Generic;
 
     /// <summary>
-    /// ProductDataProvider Implementation class
+    /// SqlProductDataProvider Implementation class
     /// </summary>
-    public class ProductDataProvider : IProductDataProvider
+    public class SqlProductDataProvider : IProductDataProvider
     {
+        public void BulkInsert(List<Product> products)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Gets product data by id.
         /// </summary>
@@ -16,7 +22,7 @@
         /// <returns></returns>
         public Product GetById(int id)
         {
-            throw new NotImplementedException();
+            return new Product() { id = 1, title = "Product from Sql DB" };
         }
 
         // <summary>

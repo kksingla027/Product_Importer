@@ -5,9 +5,32 @@
 
     public static class DALInitializer
     {
-        public static void Initialize(IServiceCollection services)
+        public static void Initialize(IServiceCollection services, string dbProviderType)
         {
-            services.AddTransient<IProductDataProvider, ProductDataProvider>();
+            switch (dbProviderType)
+            {
+                case "1":
+                    {
+                        SQLProviderInitialize(services);
+                        break;
+                    }
+                default:
+                    {
+                        MongoProviderInitialize(services);
+                        break;
+                    }
+            }
+            
+        }
+
+        private static void SQLProviderInitialize(IServiceCollection services)
+        {
+            services.AddTransient<IProductDataProvider, SqlProductDataProvider>();
+        }
+
+        private static void MongoProviderInitialize(IServiceCollection services)
+        {
+            services.AddTransient<IProductDataProvider, MongoProductDataProvider>();
         }
     }
 }

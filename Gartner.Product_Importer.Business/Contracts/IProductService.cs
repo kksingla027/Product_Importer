@@ -17,6 +17,12 @@ namespace Gartner.Product_Importer.Business.Contracts
         void Insert(ProductDTO productDto);
 
         /// <summary>
+        /// Bulk Insert new products.
+        /// </summary>
+        /// <param name="products"></param>
+        void BulkInsert(List<ProductDTO> products);
+
+        /// <summary>
         /// Update an existing Product.
         /// </summary>
         /// <param name="productDto"></param>

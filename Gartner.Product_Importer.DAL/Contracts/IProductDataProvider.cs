@@ -1,6 +1,7 @@
 ﻿namespace Gartner.Product_Importer.DAL.Contracts
 {
     using Gartner.Product_Importer.Entities;
+    using System.Collections.Generic;
 
     /// <summary>
     /// IProductDataProvider contract
@@ -12,6 +13,12 @@
         /// </summary>
         /// <param name="product"></param>
         void Insert(Product product);
+
+        /// <summary>
+        /// Bulk Insert new products.
+        /// </summary>
+        /// <param name="products"></param>
+        void BulkInsert(List<Product> products);
 
         /// <summary>
         /// Update an existing product.
