@@ -51,9 +51,13 @@ namespace Gartner.Product_Importer.API.Controllers
         [HttpGet("Import")]
         public IActionResult Import(string filePath)
         {
+            
             var jsonData = this._fileProvider.ReadFileContent(filePath);
             var products = Newtonsoft.Json.JsonConvert.DeserializeObject<ProductDTO[]>(jsonData);
-            this._productService.BulkInsert(products.ToList());
+            if (products != null && products.Length > 0)
+            {
+                this._productService.BulkInsert(products.ToList());
+            }
             return Ok();
         }
     }
